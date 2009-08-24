@@ -314,7 +314,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		33A73B350928584700F6FEA5 /* Development */ = {
+		33A73B350928584700F6FEA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
@@ -336,9 +336,9 @@
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		33A73B360928584700F6FEA5 /* Deployment */ = {
+		33A73B360928584700F6FEA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -356,7 +356,7 @@
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		33A73B370928584700F6FEA5 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -375,17 +375,17 @@
 			};
 			name = Default;
 		};
-		33A73B390928584700F6FEA5 /* Development */ = {
+		33A73B390928584700F6FEA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Development;
+			name = Debug;
 		};
-		33A73B3A0928584700F6FEA5 /* Deployment */ = {
+		33A73B3A0928584700F6FEA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Deployment;
+			name = Release;
 		};
 		33A73B3B0928584700F6FEA5 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -399,8 +399,8 @@
 		33A73B340928584700F6FEA5 /* Build configuration list for PBXNativeTarget "DisposeWindow+Beep_Injector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33A73B350928584700F6FEA5 /* Development */,
-				33A73B360928584700F6FEA5 /* Deployment */,
+				33A73B350928584700F6FEA5 /* Debug */,
+				33A73B360928584700F6FEA5 /* Release */,
 				33A73B370928584700F6FEA5 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -409,8 +409,8 @@
 		33A73B380928584700F6FEA5 /* Build configuration list for PBXProject "DisposeWindow+Beep_Injector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33A73B390928584700F6FEA5 /* Development */,
-				33A73B3A0928584700F6FEA5 /* Deployment */,
+				33A73B390928584700F6FEA5 /* Debug */,
+				33A73B3A0928584700F6FEA5 /* Release */,
 				33A73B3B0928584700F6FEA5 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;

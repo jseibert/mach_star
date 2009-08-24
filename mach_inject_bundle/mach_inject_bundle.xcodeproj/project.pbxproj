@@ -267,7 +267,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		33B2AC7809285567004B1632 /* Development */ = {
+		33B2AC7809285567004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -297,9 +297,9 @@
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC7909285567004B1632 /* Deployment */ = {
+		33B2AC7909285567004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -323,7 +323,7 @@
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
 		33B2AC7A09285567004B1632 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -347,17 +347,17 @@
 			};
 			name = Default;
 		};
-		33B2AC7C09285567004B1632 /* Development */ = {
+		33B2AC7C09285567004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC7D09285567004B1632 /* Deployment */ = {
+		33B2AC7D09285567004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Deployment;
+			name = Release;
 		};
 		33B2AC7E09285567004B1632 /* Default */ = {
 			isa = XCBuildConfiguration;
@@ -371,8 +371,8 @@
 		33B2AC7709285567004B1632 /* Build configuration list for PBXNativeTarget "mach_inject_bundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC7809285567004B1632 /* Development */,
-				33B2AC7909285567004B1632 /* Deployment */,
+				33B2AC7809285567004B1632 /* Debug */,
+				33B2AC7909285567004B1632 /* Release */,
 				33B2AC7A09285567004B1632 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -381,8 +381,8 @@
 		33B2AC7B09285567004B1632 /* Build configuration list for PBXProject "mach_inject_bundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC7C09285567004B1632 /* Development */,
-				33B2AC7D09285567004B1632 /* Deployment */,
+				33B2AC7C09285567004B1632 /* Debug */,
+				33B2AC7D09285567004B1632 /* Release */,
 				33B2AC7E09285567004B1632 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;

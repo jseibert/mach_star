@@ -17,7 +17,8 @@
 #include <stdio.h>  // for printf()
 #include <mach-o/fat.h> // for fat structure decoding
 #include <mach-o/arch.h> // to know which is local arch
-#include <fcntl.h> // for open/close
+#include <fcntl.h> // for open
+#include <unistd.h> // for close
 // for mmap()
 #include <sys/types.h>
 #include <sys/mman.h>
@@ -76,8 +77,10 @@ mach_inject(
 	if( !err ) {
 		err = task_for_pid( mach_task_self(), targetProcess, &remoteTask );
 #if defined(__i386__) || defined(__x86_64__)
-		mach_error("fuck", err);
-		if (err == 5) fprintf(stderr, "Could not access task for pid %d. You probably need to add user to procmod group\n", targetProcess);
+		if (err != KERN_SUCCESS) {
+			mach_error("task_for_pid failed with error: ", err);
+			if (err == 5) fprintf(stderr, "Could not access task for pid %d. You probably need to add user to procmod group\n", targetProcess);
+		}
 #endif
 	}
 		
@@ -278,8 +281,6 @@ mach_inject(
 		if( remoteStack )
 			vm_deallocate( remoteTask, remoteStack, stackSize );
 	}
-	
-	printf("mach inject done? %d\n", err);
 	
 	return err;
 }

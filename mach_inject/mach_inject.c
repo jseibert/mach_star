@@ -373,7 +373,7 @@ machImageForPointer(
 			  const struct section * jumpTableSection = getsectbynamefromheader( header, SEG_IMPORT, "__jump_table" );
 
 			  if (!jumpTableSection) {
-			    unsigned char *start, *end;
+			    //unsigned char *start, *end;
 			    jumpTableSection = getsectbynamefromheader( header, SEG_TEXT, "__symbol_stub" );
 			    /*
 			    start = end = (char *) header + jumpTableSection->offset;
